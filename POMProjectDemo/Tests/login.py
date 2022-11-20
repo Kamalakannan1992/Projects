@@ -29,10 +29,10 @@ class LoginTest(unittest.TestCase):
         home.enter_firstname("Kamalakannan")
         home.enter_lastname("M")
         home.click_save()
-        # home.click_editname()
-        # home.edit_lastname("Mahesh")
-        # home.click_editsave()
-        # time.sleep(10)
+        home.click_editname()
+        home.edit_lastname("Mahesh")
+        home.click_editsave()
+        time.sleep(10)
 
     def test_02_login_invalid(self):
         driver = self.driver
